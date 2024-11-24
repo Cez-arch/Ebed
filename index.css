@@ -1,0 +1,124 @@
+/* Genel Ayarlar */
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #F2F2F2;
+  color: #212121;
+}
+
+
+/* Nav ve Liste Ayarları */
+nav {
+  background-color: #F2F2F2; 
+  padding: 5px 0;
+  text-align: center; 
+}
+
+nav ul {
+  list-style: none; /* Liste işaretlerini kaldırır */
+  display: flex; 
+  justify-content: center; 
+  gap: 20px; /* Linkler arasındaki boşluk */
+}
+
+nav ul li a  {
+  color: #475459; 
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+  font-size: 1.2em; 
+  padding: 5px 10px;
+  transition: color 0.3s ease; /* Hover animasyonu */
+}
+
+nav ul li a:hover {
+  color: #BDBFBF; /* Üzerine gelindiğinde renk değişimi */
+}
+
+
+/* Header (Video ve İçerik) */
+.hero {
+  position: relative; /* İçeriği video üzerine yerleştirebilmek için */
+  height: 300px; /* Header'ın yüksekliği */
+  overflow: hidden; /* Taşan video kısımlarını gizler */
+}
+.background-video {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Videoyu header'ın tamamını kaplayacak şekilde ayarlar */
+  z-index: -1; /* Video içerik kısmının arkasında kalır */
+}
+/* İçerik Alanı (H1 ve P) 
+.hero .content {
+  position: absolute;
+  top: 50%; /* Yüksekliği ortalamak için 
+  left: 50%;
+  transform: translate(-50%, -50%);  Tam ortalamak için 
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);  Siyah yarı şeffaf arka plan 
+  padding: 15px 25px;  İçeriği rahat okunabilir yapmak için padding 
+  border-radius: 10px;  Köşeleri yuvarlar
+  z-index: 1;  İçeriği video önünde tutar */
+
+.hero h1 {
+  color: white;
+  text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+               1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+  font-size: 2.5em;
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.hero p {
+  color: white;
+  text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+               1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+
+/* Genel Ayarlar */
+.sectionclas {
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  margin-top: 5%;
+  padding: 20px;
+  width: 75%; /* Her kutunun genişliği */
+  height: auto; /* İçeriğe göre yüksekliği ayarla */
+  background-color: #F2F2F2;
+  border: 1px solid #DDD;
+  
+}
+
+
+#hocalar {
+  display: grid;
+  grid-template-columns: 1fr auto; 
+  gap: 20px; 
+  align-items: center; 
+}
+
+#hocalar img { 
+  width: 300px; 
+  height: auto; 
+  border: 1px solid #212121; 
+  border-radius: 5px; 
+}
+#hocalar h2 {
+  font-size: 1.5em; 
+  color: #212121;
+}
+
+#hocalar p {
+  font-size: 1em; 
+  color: #212121;
+  line-height: 1.6; 
+}
+
+#haritaid {
+  display: inline-block;
+}
